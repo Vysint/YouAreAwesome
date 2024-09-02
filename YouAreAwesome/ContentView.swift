@@ -14,7 +14,7 @@ struct ContentView: View {
             Text(messageString)
                 .font(.largeTitle)
                 .fontWeight(.heavy)
-                .foregroundStyle(.red)
+                .foregroundStyle(.cyan)
                 .padding()
             HStack{
                 Button("Awesome") {
