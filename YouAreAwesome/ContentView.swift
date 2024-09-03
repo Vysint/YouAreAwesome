@@ -18,6 +18,10 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .fontWeight(.black)
             
+            Text("Version 3.0")
+                .font(.largeTitle)
+                .fontWeight(.black)
+            Rectangle()
         }
         .padding()
         .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
