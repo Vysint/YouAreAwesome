@@ -11,6 +11,11 @@ struct ContentView: View {
     @State private var messageString = ""
     var body: some View {
         VStack {
+            Image(systemName: "globe")
+                .resizable()
+                .scaledToFit()
+                .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                .padding()
             Text(messageString)
                 .font(.largeTitle)
                 .fontWeight(.heavy)
