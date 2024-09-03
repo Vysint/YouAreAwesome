@@ -11,7 +11,7 @@ struct ContentView: View {
     @State private var messageString = ""
     var body: some View {
         VStack {
-            Image(systemName: "3.circle")
+            Image(systemName: "4.circle")
                 .resizable()
                 .scaledToFit()
             Text("Version 3.0")
@@ -20,7 +20,7 @@ struct ContentView: View {
             Rectangle()
         }
         .padding()
-        .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+        .foregroundColor(.purple)
     }
 }
 
