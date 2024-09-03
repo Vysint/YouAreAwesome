@@ -11,24 +11,17 @@ struct ContentView: View {
     @State private var messageString = ""
     var body: some View {
         VStack {
+            Image(systemName: "3.circle")
+                .resizable()
+                .scaledToFit()
             
-            Text(messageString)
+            Text("Version 3.0")
                 .font(.largeTitle)
-                .fontWeight(.heavy)
-                .foregroundStyle(.cyan)
-                .padding()
-            HStack{
-                Button("Awesome") {
-                    messageString = "You are Awesome!";
-                    //This is the action performed when the button is pressed
-                }.buttonStyle(.borderedProminent)
-                Button("Great"){
-                    messageString="You are Great!"
-                }.buttonStyle(.borderedProminent)
-            }
-            
+                .fontWeight(.black)
+            Rectangle()
         }
-        //.padding()
+        .padding()
+        .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
     }
 }
 
