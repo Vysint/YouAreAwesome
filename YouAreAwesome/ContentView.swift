@@ -11,6 +11,15 @@ struct ContentView: View {
     @State private var messageString = "When the genius bar needs help, they call you!"
     var body: some View {
         VStack {
+            Text("You have excellent skills")
+                .font(.title)
+                .fontWeight(.black)
+                .foregroundColor(.white)
+                .padding()
+                .background(.purple)
+                .cornerRadius(15)
+            
+            Spacer()
             Text(messageString)
                 .font(.largeTitle)
                 .fontWeight(.heavy)
@@ -20,14 +29,17 @@ struct ContentView: View {
                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                 .border(.orange, width: 1)
                 .padding()
+            Spacer()
             HStack{
                 Button("Awesome"){
                     messageString = "You are awesome!"
                 }.buttonStyle(.borderedProminent)
+                Spacer()
                 Button("Great"){
                     messageString = "You are Great!"
                 }.buttonStyle(.borderedProminent)
             }
+            .padding()
         }
         //        .padding()
         
