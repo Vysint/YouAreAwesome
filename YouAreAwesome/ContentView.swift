@@ -16,9 +16,10 @@ struct ContentView: View {
                 .fontWeight(.heavy)
                 .minimumScaleFactor(0.5)
                 .foregroundColor(.cyan)
-                .padding()
-                .frame(width:150, height: 100)
+                .frame( height: 100)
+                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                 .border(.orange, width: 1)
+                .padding()
             HStack{
                 Button("Awesome"){
                     messageString = "You are awesome!"
